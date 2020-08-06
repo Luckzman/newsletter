@@ -3,7 +3,7 @@
 <html xmlns="https://www.w3.org/1999/xhtml">
 
 <head>
-  <title>Test Email Sample</title>
+  <title>Mama Delivery Kits</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
@@ -24,6 +24,24 @@
 
     .container {
       width: 600px;
+      /* width: 90% */
+    }
+
+    .footer-container {
+      width: 600px;
+      /* width: 90% */
+    }
+
+    .container .mobile-col2 {
+      display: none;
+    }
+
+    .mobile-logo {
+      display: none;
+    }
+
+    .web-logo {
+      display: table-cell;
     }
 
     .head2 {
@@ -56,6 +74,14 @@
       font-weight: bold;
     }
 
+    .container .side-container-row {
+      display: none;
+    }
+
+    /* .container .mobile-side-container {
+      display: table-row;
+    } */
+
     .side-container {
       overflow: hidden;
       width: 250px;
@@ -63,8 +89,8 @@
     }
 
     .side-img-1 {
-      position: relative;
-      height: 250px;
+      /* position: relative; */
+      /* height: 250px; */
       width: 250px;
     }
 
@@ -86,13 +112,13 @@
     }
 
     .side-img-2-container {
-      overflow: hidden;
+      /* overflow: hidden; */
       width: 250px;
     }
 
     .side-img-2 {
-      position: relative;
-      height: 250px;
+      /* position: relative; */
+      /* height: 250px; */
       width: 250px;
     }
 
@@ -107,7 +133,8 @@
       color: #ffffff;
     }
 
-    .footer .container1 .side1 {
+    .footer .container1 .side1,
+    .title2 {
       text-align: left;
       font-family: 'Lora', sans-serif;
       font-weight: 700;
@@ -116,7 +143,8 @@
       /* color: #ffffff; */
     }
 
-    .footer .container1 .text1 {
+    .footer .container1 .text1,
+    .text2 {
       text-align: left;
       font-family: 'Lora', sans-serif;
       font-weight: 600;
@@ -127,7 +155,8 @@
 
     }
 
-    .footer .container1 .link1 {
+    .footer .container1 .link1,
+    .link2 {
       text-align: left;
       font-family: 'Lora', sans-serif;
       font-size: 20px;
@@ -143,6 +172,10 @@
       text-align: center;
       color: #ffffff;
       margin: 0 auto;
+    }
+
+    .footer .container2-mobile {
+      display: none;
     }
 
     .footer .container2 .title2 {
@@ -176,7 +209,19 @@
       padding-top: 20px;
     }
 
-    .footer .follow {
+    /* .footer .container2 .container2-mobile .link2 {
+      text-align: center;
+      font-family: 'Lora', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      line-height: 28px;
+      color: #ffffff;
+      padding-top: 20px;
+    } */
+
+    .footer .follow,
+    .follow-us {
       width: 25%;
       padding: 0 10px 15px 10px;
       text-align: center;
@@ -185,6 +230,81 @@
       font-size: 25px;
       line-height: 28px;
       color: #ffffff;
+    }
+
+    .follow-us {
+      text-align: left;
+      padding: 0;
+    }
+
+    @media only screen and (max-width: 480px) {
+      /* body {
+        width: 480px;
+      } */
+
+      .mobile-logo {
+        display: table-row;
+      }
+
+      .web-logo {
+        display: none;
+      }
+
+      .container {
+        width: 95%;
+        /* width: 400px; */
+        margin: 0 auto;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .container .col2 {
+        display: none;
+      }
+
+      .container .mobile-col2 {
+        display: table-row;
+      }
+
+      .container .side-container-row {
+        display: table-row;
+      }
+
+      .container .mobile-side-container {
+        display: none;
+      }
+
+      .side-container {
+        padding-right: 0px;
+      }
+
+      .side-text-2 {
+        text-align: center;
+        padding-right: 0px;
+      }
+
+      .side-text-1 {
+        text-align: center;
+      }
+
+      .footer .container2 {
+        display: none;
+        width: 100%;
+        padding-right: 0px;
+        text-align: center;
+        color: #ffffff;
+        margin: 0 auto;
+      }
+
+      .footer .container2-mobile {
+        display: table-row;
+      }
+
+      .footer .follow {
+        display: none;
+      }
     }
   </style>
 </head>
@@ -195,11 +315,23 @@
       <td>
         <table class="container" border="0" align="center" cellpadding="0" cellspacing="0" style="margin: 0 auto">
           <tr>
+            <td align="center" style="padding: 25px 0;"><a style="color: #5c5c5c" href="">View this email in your
+                browser</a></td>
+          </tr>
+          <tr>
             <td>
               <table width="100%">
+
                 <tr>
                   <td>
                     <table width="100%">
+                      <tr class="mobile-logo">
+                        <td align="center" style="padding: 15px 0 15px 0;">
+                          <img
+                            src="https://res.cloudinary.com/dx0nauane/image/upload/v1595589482/mDoc/Email%20Template/logo.jpg"
+                            alt="" width="80">
+                        </td>
+                      </tr>
                       <tr>
                         <td
                           style="font-weight: 900; font-family: 'Libre Franklin'; color: #152c30; font-size: 43px; letter-spacing: 2px;"
@@ -210,7 +342,8 @@
                       </tr>
                     </table>
                   </td>
-                  <td align="right" style="padding: 15px 0 15px 0;">
+
+                  <td class="web-logo" align="right" style="padding: 15px 0 15px 0;">
                     <img
                       src="https://res.cloudinary.com/dx0nauane/image/upload/v1595589482/mDoc/Email%20Template/logo.jpg"
                       alt="" width="80">
@@ -293,6 +426,44 @@
                             alt="" width="100%">
                         </td>
                       </tr>
+
+                      <tr class="mobile-col2">
+                        <td style="font-family: 'Belleza', sans-serif; font-size: 28.6px; padding-top: 20px;">FOR
+                          HEALTHCARE WORKERS,</td>
+                      </tr>
+                      <tr class="mobile-col2">
+                        <td
+                          style="font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 25px; font-weight: 700; padding-top: 10px;">
+                          Each pack of Mama Delivery
+                          Kit contained the following:
+                          <ul style="padding-left: 20px; margin-top: 0px;">
+                            <li>1 pair of overalls</li>
+                            <li>1 Isolation gown</li>
+                            <li>1 Face shield</li>
+                            <li>1 FFP mask</li>
+                            <li>2 Sets of gloves</li>
+                            <li>1 pair of sleeve covers (for
+                              health workers who may
+                              be only have an apron)</li>
+                            <li>1 pair shoe covers</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr class="mobile-col2">
+                        <td style="padding: 10px 0 20px 0;">
+                          <img
+                            src="https://res.cloudinary.com/dx0nauane/image/upload/v1595412212/mDoc/Email%20Template/side_pix2.png"
+                            alt="" width="100%">
+                        </td>
+                      </tr>
+                      <tr class="mobile-col2">
+                        <td>
+                          <img
+                            src="https://res.cloudinary.com/dx0nauane/image/upload/v1595413066/mDoc/Email%20Template/side_pix3.png"
+                            alt="" width="100%">
+                        </td>
+                      </tr>
+
                     </table>
                   </td>
 
@@ -348,11 +519,19 @@
                 alt="">
             </td>
           </tr>
+
           <tr>
             <td style="padding-top: 20px;">
-              <table width="100%">
+              <table>
+                <tr class="side-container-row">
+                  <td align="center"">
+                    <img class=" side-img-1"
+                    src="https://res.cloudinary.com/dx0nauane/image/upload/v1595462684/mDoc/Email%20Template/side_pix6_1.jpg"
+                    alt="">
+                  </td>
+                </tr>
                 <tr>
-                  <td class="side-container">
+                  <td class="side-container mobile-side-container">
                     <img class="side-img-1"
                       src="https://res.cloudinary.com/dx0nauane/image/upload/v1595512897/mDoc/Email%20Template/side_pix6_2.png"
                       alt="">
@@ -367,16 +546,24 @@
               </table>
             </td>
           </tr>
+
           <tr>
             <td style="padding-bottom: 20px;">
               <table>
+                <tr class="side-container-row">
+                  <td align="center"">
+                    <img class=" side-img-2"
+                    src="https://res.cloudinary.com/dx0nauane/image/upload/v1596614618/mDoc/Email%20Template/side_pix7_2_1.jpg"
+                    alt="">
+                  </td>
+                </tr>
                 <tr>
                   <td class="side-text-2">
                     "On behalf of LIMH, I would like to thank mDoc Healthcare for the Mama Delivery Kits donation. It
                     will be very handy at this point in time when we are dealing with this pandemic because we know
                     there are lots of issues on the shortage of PPE and we will always need any extra PPEs we can get at
                     this point."</td>
-                  <td class="side-img-2-container">
+                  <td class="side-img-2-container mobile-side-container">
                     <img class="side-img-2"
                       src="https://res.cloudinary.com/dx0nauane/image/upload/v1595512897/mDoc/Email%20Template/side_pix7_2.png"
                       alt="">
@@ -385,6 +572,13 @@
               </table>
             </td>
           </tr>
+
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="padding: 30px 0;">
+        <table>
           <tr class="footer">
             <td style="padding-top: 15px;">
               <table align="center" width="90%">
@@ -403,8 +597,87 @@
                       <tr>
                         <td><a class="link1" href="https://navihealth.ai/">navihealth.ai</a></td>
                       </tr>
+
+                      <tr class="container2-mobile">
+                        <td style="padding-top: 10px;" class="title2">
+                          Sign up</td>
+                      </tr>
+                      <tr class="container2-mobile">
+                        <td class="text2">
+                          To
+                          receive personalized selfcare support from our coach-led multidisciplinary team, for your
+                          regular or chronic health needs.</td>
+                      </tr>
+                      <tr class="container2-mobile">
+                        <td style=" padding-bottom: 10px; "><a class="link2" style="color: #fff; text-decoration: none;"
+                            href="https://www.mymdoc.com/register/">mymdoc.com/register</a>
+                        </td>
+                      </tr>
+                      <tr class="container2-mobile">
+                        <td class="follow-us">Follow Us</td>
+                      </tr>
+                      <tr class="container2-mobile" style="color: #ffffff;">
+                        <td>
+                          <table>
+                            <tr>
+                              <td valign="top" style="text-align: center;">
+                                <a style="text-align: center; text-decoration: none;" href="https://twitter.com/_mDoc">
+                                  <table>
+                                    <tr>
+                                      <td style="padding-bottom: 8px;"><img style="width: 40px;"
+                                          src="https://res.cloudinary.com/dx0nauane/image/upload/v1595466094/mDoc/Email%20Template/twitter_logo.png"
+                                          alt="" /></td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="font-family: 'Lora', sans-serif; font-size: 12px; line-height: 14px; color:#ffffff">
+                                        @_mdoc</td>
+                                    </tr>
+                                  </table>
+                                </a>
+                              </td>
+                              <td valign="top" style="text-align: center;"><a
+                                  style="text-align: center; text-decoration: none;"
+                                  href="https://www.instagram.com/mymdoc/">
+                                  <table>
+                                    <tr>
+                                      <td><img style="width: 40px;"
+                                          src="https://res.cloudinary.com/dx0nauane/image/upload/v1595466094/mDoc/Email%20Template/instgram_logo.webp"
+                                          alt="" /></td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="font-family: 'Lora', sans-serif; font-size: 12px; line-height: 14px; color:#ffffff; text-decoration: none;">
+                                        @mymdoc</td>
+                                    </tr>
+                                  </table>
+                                </a>
+                              </td>
+                              <td valign="top" style="text-align: center;"><a
+                                  style="text-align: center; text-decoration: none;"
+                                  href="https://web.facebook.com/mymdoc">
+                                  <table>
+                                    <tr>
+                                      <td><img style="width:40px"
+                                          src="https://res.cloudinary.com/dx0nauane/image/upload/v1595466094/mDoc/Email%20Template/fb_logo.png"
+                                          alt="" /></td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="font-family: 'Lora', sans-serif; font-size: 12px; line-height: 14px; color:#ffffff; text-decoration: none;">
+                                        @mymdoc</td>
+                                    </tr>
+                                  </table>
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
                     </table>
                   </td>
+
+
                   <td valign="top" class="container2">
                     <table align="center">
                       <tr>
@@ -483,9 +756,11 @@
             </td>
           </tr>
           <tr>
-            <td align="center" style="padding: 30px 0;"><a style="color: #5c5c5c"
+            <td align="center" style="padding-top: 15px;">
+              <a style="color: #5c5c5c"
                 href="https://u9084613.ct.sendgrid.net/asm/unsubscribe/global/?user_id=9084613&data=dqefoCDPSONgdEspesBMTlJaQRiVIAPVVGF36cfgnXczBPk48r2Kb10J2k3HtUrlnbNdX617xugD4Tgx8Z---k7DrcZ01dbpYOWmtqN5Zsa4bs93qwHzNUZASHKQvT0gcJCkzqzZ15OUI2wbCyMOdUEJxcn7T4BpSr1sqaEicJOTs580F-FaJx-Vzu3iy4Z2yGBN2jOx5jirgi5HGi-nIju-Vx30B8i8vjmtguj_3LjhQ7yhllpmIbv--u7bWw-rn45msRTD2UL08E96muksWqhsYzvx2lKsvH8b_I_u0_YPJyJTWfQRcV0gid9YG8wlSWkBtPkzgNres1gNsxX3w0vAexrBDQWdUMpu27I7KyuOI2twKPLxiN3nYKP22dk86M1Dkv4HNiPrj6yOKoSyOx5t1LwP5LEBp-WIPHdWLYPpvndN-S_rfnHatyfg5d_N">Click
-                here to unsubscribe</a></td>
+                here to unsubscribe</a>
+            </td>
           </tr>
         </table>
       </td>
